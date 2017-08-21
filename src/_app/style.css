@@ -31,6 +31,11 @@ app-nav ul.nav li.nav-item:first-child {
 app-nav ul.nav li.nav-item:last-child {
   margin-right  : 15px;
 }
+app-main {
+  display       : block;
+  padding       : 20px 15px 10px;
+  margin        : 5px 0;
+}
 app-footer {
   display       : block;
   background    : #c8e4a0;

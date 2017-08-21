@@ -87,4 +87,17 @@
       '</footer>'
   });
 
+  // component for app home
+  module.component('appHome', {
+    template:
+      // inline template
+      // we can also use templateUrl for external template
+      // ex: `templateUrl: 'template.html'`
+      // templateUrl will be relative from current page url if not use absolute url path
+      '<section>' +
+      '  <h2>Example AngularJS Web [Route]</h2>' +
+      '  <p>An example of web made with AngularJS route and NodeJS</p>' +
+      '</section>'
+  });
+
 })();

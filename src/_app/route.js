@@ -18,7 +18,9 @@
       .when('/', {
         template:
           // inline template
-          '<main>Main</main>'
+          '<main>' +
+          '  <app-home></app-home>' +
+          '</main>'
       })
       .otherwise('/');
   }]);
