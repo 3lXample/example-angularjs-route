@@ -24,12 +24,14 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {},
+    preprocessors: {
+      'src/**/!(*.spec).js': ['coverage'],
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'html', 'junit'],
+    reporters: ['progress', 'html', 'junit', 'coverage'],
 
     // configuration for test html report
     htmlReporter: {
@@ -53,6 +55,16 @@ module.exports = function(config) {
       classNameFormatter: function(browser, result) {
         return result.suite.join('.');
       }
+    },
+
+    // configuration for test coverage report
+    coverageReporter: {
+      dir: 'reports/karma-coverage',
+      reporters: [
+        { type: 'lcov',      subdir: '.' },
+        { type: 'cobertura', subdir: '.', file: 'cobertura.xml' },
+        { type: 'text-summary' }
+      ]
     },
 
     // web server port
