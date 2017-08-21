@@ -7,7 +7,9 @@
  */
 const fs = require('fs-extra');
 
+const reportsDir   = 'reports';
 const srcVendorDir = 'src/_vendor';
 
 // Delete directory content or create folder if not exist
+fs.emptyDirSync(reportsDir);
 fs.emptyDirSync(srcVendorDir);
