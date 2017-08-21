@@ -171,4 +171,52 @@ describe('3XApp-example', function() {
 
   });
 
+  // Suite test for exampleService4
+  describe('exampleService4', function() {
+    var exampleValue = 'value';
+    var banner       = 'banner';
+    var service;
+
+    // Mock exampleValue
+    beforeEach(module(function($provide) {
+      $provide.value('exampleValue', exampleValue);
+    }));
+
+    // Config exampleService4
+    beforeEach(module(function(exampleService4Provider) {
+      exampleService4Provider.setBanner(banner);
+    }));
+
+    // Initialize object exampleService4
+    beforeEach(inject(function(exampleService4) {
+      service = exampleService4;
+    }));
+
+    // Test
+    it('Property publicVariable value should be `publicValue`', function() {
+      expect(service.publicVariable).toEqual('publicValue');
+    });
+
+    // Test
+    it('Property version value should be `' + exampleValue + '`', function() {
+      expect(service.version).toEqual(exampleValue);
+    });
+
+    // Test
+    it('Property banner value should be `' + banner + '`', function() {
+      expect(service.banner).toEqual(banner);
+    });
+
+    // Test
+    it('Function publicFunc should be return `publicValue`', function() {
+      expect(service.publicFunc()).toEqual('publicValue');
+    });
+
+    // Test
+    it('Function getHeader should be return `' + banner + ' [' + exampleValue + ']`', function() {
+      expect(service.getHeader()).toEqual(banner + ' [' + exampleValue + ']');
+    });
+
+  });
+
 });
