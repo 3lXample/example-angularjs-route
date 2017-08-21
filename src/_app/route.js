@@ -39,8 +39,15 @@
       .when('/addition', {
         template:
           // inline template
-          '<main>' +
-          '  <app-home></app-home>' +
+          '<main ng-controller="additionController">' +
+          '  <app-user-list' +
+          '    title="title"' +
+          '    menus="menus"' +
+          '    info="info"' +
+          '    users="users"' +
+          '    value="count"' +
+          '    on-click-menu="onClickMenu(menu)">' +
+          '  </app-user-list>' +
           '</main>'
       })
       .otherwise('/');
