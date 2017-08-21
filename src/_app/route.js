@@ -36,6 +36,13 @@
           '  </app-user-list>' +
           '</main>'
       })
+      .when('/addition', {
+        template:
+          // inline template
+          '<main>' +
+          '  <app-home></app-home>' +
+          '</main>'
+      })
       .otherwise('/');
   }]);
 
