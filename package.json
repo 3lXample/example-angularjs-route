@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/3lXample/example-angularjs-route.git"
   },
+  "scripts": {
+    "clean": "node scripts/clean"
+  },
   "dependencies": {
     "angular": "1.6.5",
     "angular-route": "1.6.5",
