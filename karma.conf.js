@@ -29,7 +29,17 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'html'],
+
+    // configuration for test html report
+    htmlReporter: {
+      outputFile: 'reports/karma-html/result.html',
+      pageTitle: 'Example AngularJS Web [Route] Unit Tests',
+      subPageTitle: 'An example of web made with AngularJS route and NodeJS',
+      groupSuites: true,
+      useCompactStyle: true,
+      useLegacyStyle: true
+    },
 
     // web server port
     port: 9876,
