@@ -50,6 +50,13 @@
           '  </app-user-list>' +
           '</main>'
       })
+      .when('/subtraction', {
+        template:
+          // inline template
+          '<main>' +
+          '  <app-home></app-home>' +
+          '</main>'
+      })
       .otherwise('/');
   }]);
 
