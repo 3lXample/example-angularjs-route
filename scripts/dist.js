@@ -7,8 +7,13 @@
  */
 const fs = require('fs-extra');
 
-const srcDir  = 'src';
-const distDir = 'docs';
+const srcDir         = 'src';
+const srcTestSumFile = 'reports/karma-html/result.html';
+const srcTestCovDir  = 'reports/karma-coverage/lcov-report'
+
+const distDir         = 'docs';
+const distTestSumFile = 'docs/test/summary/index.html';
+const distTestCovDir  = 'docs/test/coverage';
 
 const copyOptions = { 'overwrite': true, 'errorOnExist': true };
 
@@ -17,3 +22,9 @@ fs.emptyDirSync(distDir);
 
 // Copy content of src directory into docs directory
 fs.copySync(srcDir, distDir, copyOptions);
+
+// Copy test summary into dist directory
+fs.copySync(srcTestSumFile, distTestSumFile, copyOptions);
+
+// Copy test coverage into dist directory
+fs.copySync(srcTestCovDir, distTestCovDir, copyOptions);
