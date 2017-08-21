@@ -21,7 +21,8 @@
     "build": "node scripts/build",
     "prestart": "npm run build",
     "start": "http-server src -c-1",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "dist": "run-s clean build test && node scripts/dist"
   },
   "dependencies": {
     "angular": "1.6.5",
