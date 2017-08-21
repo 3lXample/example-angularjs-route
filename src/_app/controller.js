@@ -21,7 +21,8 @@
   function AppController($scope) {
     $scope.headerLogoImgUrl = '_assets/3lXample_logo-160x44.png';
     $scope.navMenus = [
-      { href: '/', icon: '_assets/3lXample_icon-20x20.png', iconAlt: 'home' }
+      { href: '/',           icon: '_assets/3lXample_icon-20x20.png', iconAlt: 'home' },
+      { href: '/pagination', text: 'Pagination' }
     ];
   }
 

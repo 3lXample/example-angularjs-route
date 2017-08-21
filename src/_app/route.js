@@ -22,6 +22,13 @@
           '  <app-home></app-home>' +
           '</main>'
       })
+      .when('/pagination', {
+        template:
+          // inline template
+          '<main>' +
+          '  <app-home></app-home>' +
+          '</main>'
+      })
       .otherwise('/');
   }]);
 
