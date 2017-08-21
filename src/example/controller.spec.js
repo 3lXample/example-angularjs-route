@@ -15,8 +15,14 @@ describe('3XApp-example', function() {
 
   // Suite test for controller
   describe('exampleController', function() {
+    var header1 = 'header1';
     var scope;
     var ctrl;
+
+    // Mock exampleService1
+    beforeEach(module(function($provide) {
+      $provide.value('exampleService1', { getHeader: function() { return header1; } });
+    }));
 
     // Create object mock for $scope
     // Initialize object exampleController and inject dependencies into it
@@ -28,6 +34,11 @@ describe('3XApp-example', function() {
     // Test
     it('should have $scope.title with value `elpmaxE SJralugnA`', function() {
       expect(scope.title).toEqual('elpmaxE SJralugnA');
+    });
+
+    // Test
+    it('should have scope.exam1 with value `' + header1 + '`', function() {
+      expect(scope.exam1).toEqual(header1);
     });
 
   });
