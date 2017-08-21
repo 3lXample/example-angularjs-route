@@ -25,8 +25,15 @@
       .when('/pagination', {
         template:
           // inline template
-          '<main>' +
-          '  <app-home></app-home>' +
+          '<main ng-controller="paginationController">' +
+          '  <app-user-list' +
+          '    title="title"' +
+          '    menus="menus"' +
+          '    info="info"' +
+          '    users="users"' +
+          '    value="page"' +
+          '    on-click-menu="onClickMenu(menu)">' +
+          '  </app-user-list>' +
           '</main>'
       })
       .otherwise('/');
