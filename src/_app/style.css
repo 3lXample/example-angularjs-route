@@ -49,3 +49,23 @@ app-footer p {
   text-align    : right;
   margin        : 0;
 }
+
+/* app user component style */
+app-user-list table thead tr th:nth-child(3) {
+  text-align: center;
+}
+app-user-list table thead tr th:nth-child(4) {
+  text-align: center;
+}
+app-user-list table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+app-user-list table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+app-user-list table tbody tr td:nth-child(3) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+app-user-list table tbody tr td:nth-child(4) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
