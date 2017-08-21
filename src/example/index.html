@@ -21,9 +21,11 @@
 
   <!-- AngularJS JS -->
   <script src="../_vendor/angular.min.js"></script>
+  <script src="../_vendor/angular-route.min.js"></script>
   <!-- App JS -->
   <script src="module.js"></script>
   <script src="config.js"></script>
+  <script src="route.js"></script>
   <script src="component.js"></script>
   <script src="directive.js"></script>
   <script src="controller.js"></script>
@@ -61,6 +63,12 @@
   </table>
   <hr>
   <example-component title="title"></example-component>
+  <hr>
+  <h1>{{title | reverse}} Route</h1>
+  <a href="#!/view1">view1</a>
+  <a href="#!/view2">view2</a>
+  <a href="#!/view3">view3</a>
+  <div ng-view></div>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="../_vendor/jquery.slim.min.js"></script>
   <script src="../_vendor/popper.min.js"></script>

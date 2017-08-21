@@ -9,7 +9,7 @@
   'use strict';
 
   var name         = '3XApp-example';
-  var dependencies = [];
+  var dependencies = ['ngRoute'];
   var module       = angular.module(name, dependencies);
 
 })();
