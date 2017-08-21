@@ -29,4 +29,20 @@ describe('3XApp-example', function() {
 
   });
 
+  // Suite test for value
+  describe('exampleValue', function() {
+    var value;
+
+    // Initialize object exampleValue
+    beforeEach(inject(function(exampleValue) {
+      value = exampleValue;
+    }));
+
+    // Test
+    it('should have exampleValue with value `AngularJS 1.6.5`', function() {
+      expect(value).toEqual('AngularJS 1.6.5');
+    })
+
+  });
+
 });
