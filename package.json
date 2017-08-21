@@ -20,7 +20,8 @@
     "clean": "node scripts/clean",
     "build": "node scripts/build",
     "prestart": "npm run build",
-    "start": "http-server src -c-1"
+    "start": "http-server src -c-1",
+    "test": "karma start karma.conf.js"
   },
   "dependencies": {
     "angular": "1.6.5",
@@ -30,8 +31,13 @@
     "popper.js": "1.12.2"
   },
   "devDependencies": {
+    "angular-mocks": "1.6.5",
     "fs-extra": "4.0.1",
     "http-server": "0.10.0",
+    "jasmine-core": "2.7.0",
+    "karma": "1.7.0",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "1.1.0",
     "npm-run-all": "4.0.2"
   }
 }
