@@ -22,5 +22,10 @@
     "bootstrap": "4.0.0-beta",
     "jquery": "3.2.1",
     "popper.js": "1.12.2"
+  },
+  "devDependencies": {
+    "fs-extra": "4.0.1",
+    "http-server": "0.10.0",
+    "npm-run-all": "4.0.2"
   }
 }
