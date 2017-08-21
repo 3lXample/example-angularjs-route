@@ -11,6 +11,16 @@ body {
   border-top    : 4px solid #007fc7;
   border-bottom : 4px solid #007fc7;
 }
+app-header {
+  display       : block;
+  color         : #99bf6b;
+  padding       : 30px 15px 15px;
+  margin        : 5px 0;
+}
+app-header h1 {
+  margin        : 0;
+  line-height   : 0.75;
+}
 app-footer {
   display       : block;
   background    : #c8e4a0;
