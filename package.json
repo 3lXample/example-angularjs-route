@@ -18,7 +18,9 @@
   },
   "scripts": {
     "clean": "node scripts/clean",
-    "build": "node scripts/build"
+    "build": "node scripts/build",
+    "prestart": "npm run build",
+    "start": "http-server src -c-1"
   },
   "dependencies": {
     "angular": "1.6.5",
