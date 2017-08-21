@@ -11,4 +11,16 @@
   var name   = '3XApp';
   var module = angular.module(name);
 
+  // Add view route config
+  module.config(['$locationProvider', '$routeProvider', function config($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('!');
+    $routeProvider
+      .when('/', {
+        template:
+          // inline template
+          '<main>Main</main>'
+      })
+      .otherwise('/');
+  }]);
+
 })();

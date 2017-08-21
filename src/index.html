@@ -36,8 +36,10 @@
 </head>
 <body ng-controller="appController">
   <app-header logo-img-url="headerLogoImgUrl"></app-header>
-  <nav>Navigation</nav>
-  <main>Main</main>
+  <app-nav menus="navMenus"></app-nav>
+  <app-main>
+    <div ng-view></div>
+  </app-main>
   <app-footer></app-footer>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="_vendor/jquery.slim.min.js"></script>

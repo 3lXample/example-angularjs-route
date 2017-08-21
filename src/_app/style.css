@@ -21,6 +21,16 @@ app-header h1 {
   margin        : 0;
   line-height   : 0.75;
 }
+app-nav {
+  display       : block;
+  margin        : 5px 0;
+}
+app-nav ul.nav li.nav-item:first-child {
+  margin-left   : 15px;
+}
+app-nav ul.nav li.nav-item:last-child {
+  margin-right  : 15px;
+}
 app-footer {
   display       : block;
   background    : #c8e4a0;
