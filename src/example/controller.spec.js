@@ -17,13 +17,15 @@ describe('3XApp-example', function() {
   describe('exampleController', function() {
     var header1 = 'header1';
     var header2 = 'header2';
+    var header3 = 'header3';
     var scope;
     var ctrl;
 
-    // Mock exampleService1, exampleService2
+    // Mock exampleService1, exampleService2, exampleService3
     beforeEach(module(function($provide) {
       $provide.value('exampleService1', { getHeader: function() { return header1; } });
       $provide.value('exampleService2', { getHeader: function() { return header2; } });
+      $provide.value('exampleService3', { getHeader: function() { return header3; } });
     }));
 
     // Create object mock for $scope
@@ -46,6 +48,11 @@ describe('3XApp-example', function() {
     // Test
     it('should have scope.exam2 with value `' + header2 + '`', function() {
       expect(scope.exam2).toEqual(header2);
+    });
+
+    // Test
+    it('should have scope.exam3 with value `' + header3 + '`', function() {
+      expect(scope.exam3).toEqual(header3);
     });
 
   });
