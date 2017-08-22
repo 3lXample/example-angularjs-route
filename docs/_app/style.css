@@ -1,0 +1,71 @@
+/**
+ * example-angularjs-route
+ * https://github.com/3lXample/example-angularjs-route
+ *
+ * Copyright (c) 2017 3lXample (https://github.com/3lXample)
+ * Licensed under the MIT license
+ */
+body {
+  width         : 650px;
+  margin        : 0 auto;
+  border-top    : 4px solid #007fc7;
+  border-bottom : 4px solid #007fc7;
+}
+app-header {
+  display       : block;
+  color         : #99bf6b;
+  padding       : 30px 15px 15px;
+  margin        : 5px 0;
+}
+app-header h1 {
+  margin        : 0;
+  line-height   : 0.75;
+}
+app-nav {
+  display       : block;
+  margin        : 5px 0;
+}
+app-nav ul.nav li.nav-item:first-child {
+  margin-left   : 15px;
+}
+app-nav ul.nav li.nav-item:last-child {
+  margin-right  : 15px;
+}
+app-main {
+  display       : block;
+  padding       : 20px 15px 10px;
+  margin        : 5px 0;
+}
+app-footer {
+  display       : block;
+  background    : #c8e4a0;
+  border-radius : 2.5px;
+  padding       : 10px 15px;
+  margin        : 5px 0;
+}
+app-footer p {
+  font-size     : 12px;
+  font-style    : italic;
+  text-align    : right;
+  margin        : 0;
+}
+
+/* app user component style */
+app-user-list table thead tr th:nth-child(3) {
+  text-align: center;
+}
+app-user-list table thead tr th:nth-child(4) {
+  text-align: center;
+}
+app-user-list table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+app-user-list table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+app-user-list table tbody tr td:nth-child(3) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+app-user-list table tbody tr td:nth-child(4) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}

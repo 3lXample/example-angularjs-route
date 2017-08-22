@@ -1,0 +1,77 @@
+<!--
+ * example-angularjs-route
+ * https://github.com/3lXample/example-angularjs-route
+ *
+ * Copyright (c) 2017 3lXample (https://github.com/3lXample)
+ * Licensed under the MIT license
+ -->
+<!DOCTYPE html>
+<html lang="en" ng-app="3XApp-example" ng-strict-di>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>3lXample - Example AngularJS Web [Route]</title>
+  <meta name="description" content="An example of web made with AngularJS route and NodeJS">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+  <!-- Bootstrap CSS -->
+  <link href="../_vendor/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AngularJS JS -->
+  <script src="../_vendor/angular.min.js"></script>
+  <script src="../_vendor/angular-route.min.js"></script>
+  <!-- App JS -->
+  <script src="module.js"></script>
+  <script src="config.js"></script>
+  <script src="route.js"></script>
+  <script src="component.js"></script>
+  <script src="directive.js"></script>
+  <script src="controller.js"></script>
+  <script src="provider.js"></script>
+  <script src="filter.js"></script>
+</head>
+<body ng-controller="exampleController">
+  <h1>{{title | reverse}}</h1>
+  <table>
+    <tr>
+      <td>directive</td>
+      <td>:</td>
+      <td><example></example></td>
+    </tr>
+    <tr>
+      <td>service1</td>
+      <td>:</td>
+      <td>{{exam1}}</td>
+    </tr>
+    <tr>
+      <td>service2</td>
+      <td>:</td>
+      <td>{{exam2}}</td>
+    </tr>
+    <tr>
+      <td>service3</td>
+      <td>:</td>
+      <td>{{exam3}}</td>
+    </tr>
+    <tr>
+      <td>service4</td>
+      <td>:</td>
+      <td>{{exam4}}</td>
+    </tr>
+  </table>
+  <hr>
+  <example-component title="title"></example-component>
+  <hr>
+  <h1>{{title | reverse}} Route</h1>
+  <a href="#!/view1">view1</a>
+  <a href="#!/view2">view2</a>
+  <a href="#!/view3">view3</a>
+  <div ng-view></div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../_vendor/jquery.slim.min.js"></script>
+  <script src="../_vendor/popper.min.js"></script>
+  <script src="../_vendor/bootstrap.min.js"></script>
+</body>
+</html>

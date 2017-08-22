@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for addition/controller.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">addition/</a> controller.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">23.91% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">10% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">23.91% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/46</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * example-angularjs-route
+ * https://github.com/3lXample/example-angularjs-route
+ *
+ * Copyright (c) 2017 3lXample (https://github.com/3lXample)
+ * Licensed under the MIT license
+ */
+(function() {
+  'use strict';
+&nbsp;
+  var name   = '3XApp';
+  var module = angular.module(name);
+&nbsp;
+  // Inject dependencies
+  AdditionController.$inject = ['$scope', 'userService'];
+  // Add addition controller
+  module.controller('additionController', AdditionController);
+&nbsp;
+  // AdditionController Class
+<span class="fstat-no" title="function not covered" >  function AdditionController($scope, userService) {</span>
+    // private variable
+<span class="cstat-no" title="statement not covered" >    var userID = 0; </span>// last user id used for addition
+<span class="cstat-no" title="statement not covered" >    var listID = 0; </span>// last user used for addition
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    $scope.title = 'Addition Example [Route]';</span>
+<span class="cstat-no" title="statement not covered" >    $scope.menus = ['Add Sequence', 'Add Random'];</span>
+<span class="cstat-no" title="statement not covered" >    $scope.info  = 'Count';</span>
+<span class="cstat-no" title="statement not covered" >    $scope.users = [];</span>
+<span class="cstat-no" title="statement not covered" >    $scope.count = 0;</span>
+&nbsp;
+    // Reset and clear table user
+<span class="fstat-no" title="function not covered" >    function reset() {</span>
+<span class="cstat-no" title="statement not covered" >      userID = 0;</span>
+<span class="cstat-no" title="statement not covered" >      listID = 0;</span>
+<span class="cstat-no" title="statement not covered" >      $scope.users = [];</span>
+<span class="cstat-no" title="statement not covered" >      $scope.count = $scope.users.length;</span>
+    }
+&nbsp;
+    // Get next user for addition
+<span class="fstat-no" title="function not covered" >    function getNextUser(callback) {</span>
+<span class="cstat-no" title="statement not covered" >      userID++;</span>
+<span class="cstat-no" title="statement not covered" >      listID++;</span>
+<span class="cstat-no" title="statement not covered" >      if (userID &gt; 10000) {</span>
+<span class="cstat-no" title="statement not covered" >        userID = 1;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      userService.getById(userID, <span class="fstat-no" title="function not covered" >function getNextUserCallback(user) {</span></span>
+<span class="cstat-no" title="statement not covered" >        user.id = listID;</span>
+<span class="cstat-no" title="statement not covered" >        callback(user);</span>
+      });
+    }
+&nbsp;
+    // Add user to table user at last row
+<span class="fstat-no" title="function not covered" >    function addUser() {</span>
+<span class="cstat-no" title="statement not covered" >      getNextUser(<span class="fstat-no" title="function not covered" >function addUserCallback(user) {</span></span>
+<span class="cstat-no" title="statement not covered" >        $scope.users.push(user);</span>
+<span class="cstat-no" title="statement not covered" >        $scope.count = $scope.users.length;</span>
+      });
+    }
+&nbsp;
+    // Add user to table user at random row
+<span class="fstat-no" title="function not covered" >    function addUserRandom() {</span>
+<span class="cstat-no" title="statement not covered" >      var length = $scope.users.length;</span>
+<span class="cstat-no" title="statement not covered" >      var index  = Math.floor(Math.random() * length);</span>
+<span class="cstat-no" title="statement not covered" >      getNextUser(<span class="fstat-no" title="function not covered" >function addUserCallback(user) {</span></span>
+<span class="cstat-no" title="statement not covered" >        $scope.users.splice(index, 0, user);</span>
+<span class="cstat-no" title="statement not covered" >        $scope.count = $scope.users.length;</span>
+      });
+    }
+&nbsp;
+    // function for bind to child component
+<span class="fstat-no" title="function not covered" >    function onClickMenu(menu) {</span>
+<span class="cstat-no" title="statement not covered" >      switch (menu) {</span>
+        case 'reset':
+<span class="cstat-no" title="statement not covered" >          reset();</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case 'Add Sequence':
+<span class="cstat-no" title="statement not covered" >          addUser();</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case 'Add Random':
+<span class="cstat-no" title="statement not covered" >          addUserRandom();</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+      }
+    }
+&nbsp;
+    // expose this function, so it can be called from ng-click
+<span class="cstat-no" title="statement not covered" >    $scope.onClickMenu = onClickMenu;</span>
+&nbsp;
+    // Initialize page
+<span class="cstat-no" title="statement not covered" >    reset();</span>
+  }
+&nbsp;
+})();
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Sep 05 2017 14:55:36 GMT+0700 (WIB)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
