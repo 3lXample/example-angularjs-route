@@ -34,7 +34,6 @@
       '<section>' +
       '  <h2>{{$ctrl.title}}</h2>' +
       '  <nav aria-label="{{$ctrl.title}} Navigation">' +
-      '    <h3 class="sr-only">{{$ctrl.title}} Navigation</h3>' +
       '    <div class="row">' +
       '      <div class="col">' +
       '        <ul class="pagination">' +
@@ -50,9 +49,8 @@
       '    </div>' +
       '  </nav>' +
       '  <article>' +
-      '    <h3 class="sr-only">{{$ctrl.title}} Content</h3>' +
       '    <table class="table table-sm table-bordered table-hover">' +
-      '      <thead class="thead-inverse">' +
+      '      <thead class="table-dark">' +
       '        <tr>' +
       '          <th>First Name</th>' +
       '          <th>Last Name</th>' +
@@ -61,6 +59,9 @@
       '        </tr>' +
       '      </thead>' +
       '      <tbody>' +
+      '      <tr ng-if="$ctrl.users.length == 0">' +
+      '        <td class="message" colspan="4">No data!</td>' +
+      '      </tr>' +
       '        <tr ng-repeat="user in $ctrl.users">' +
       '          <td>{{user.firstName}}</td>' +
       '          <td>{{user.lastName}}</td>' +

@@ -69,3 +69,6 @@ app-user-list table tbody tr td:nth-child(3) {
 app-user-list table tbody tr td:nth-child(4) {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
+app-user-list table tbody tr td.message {
+  text-align: center;
+}

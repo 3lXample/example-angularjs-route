@@ -42,7 +42,6 @@
       // ex: `templateUrl: 'template.html'`
       // templateUrl will be relative from current page url if not use absolute url path
       '<nav>' +
-      '  <h2 class="sr-only">Navigation</h2>' +
       '  <ul class="nav nav-tabs">' +
       '    <li class="nav-item" ng-repeat="menu in $ctrl.menus">' +
       '      <a class="nav-link" ng-class={active:$ctrl.isActive(menu.href)} ng-href="#!{{menu.href}}">' +

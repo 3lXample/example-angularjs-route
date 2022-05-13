@@ -16,10 +16,9 @@ const vendorFile   = [
   { 'file': 'bootstrap.min.css',        'path': 'node_modules/bootstrap/dist/css/bootstrap.min.css' },
   { 'file': 'bootstrap.min.css.map',    'path': 'node_modules/bootstrap/dist/css/bootstrap.min.css.map' },
   { 'file': 'bootstrap.min.js',         'path': 'node_modules/bootstrap/dist/js/bootstrap.min.js' },
-  { 'file': 'jquery.slim.min.js',       'path': 'node_modules/jquery/dist/jquery.slim.min.js' },
-  { 'file': 'jquery.slim.min.map',      'path': 'node_modules/jquery/dist/jquery.slim.min.map' },
-  { 'file': 'popper.min.js',            'path': 'node_modules/popper.js/dist/umd/popper.min.js' },
-  { 'file': 'popper.min.js.map',        'path': 'node_modules/popper.js/dist/umd/popper.min.js.map' }
+  { 'file': 'bootstrap.min.js.map',     'path': 'node_modules/bootstrap/dist/js/bootstrap.min.js.map' },
+  { 'file': 'popper.min.js',            'path': 'node_modules/@popperjs/core/dist/umd/popper.min.js' },
+  { 'file': 'popper.min.js.map',        'path': 'node_modules/@popperjs/core/dist/umd/popper.min.js.map' }
 ];
 
 // copy vendor file into src vendor directory
